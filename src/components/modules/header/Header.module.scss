@@ -1,0 +1,11 @@
+.root {
+  .appbar {
+    padding: 0 15px;
+    .toolbar {
+      padding: 0;
+      .title {
+        flex-grow: 1;
+      }
+    }
+  }
+}
