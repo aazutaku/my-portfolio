@@ -5,12 +5,12 @@ import { TypeAnimation } from "react-type-animation";
 import styles from "./Header.module.scss";
 
 const APP_TITLE_ANIMATION = [
-  "MY",
-  1000,
-  "MY PORTFFFF",
+  "Azutaku's",
   2000,
-  "MY PORTFOLIO",
+  "Azutaku's Portfffff",
   2000,
+  "Azutaku's Portfolio",
+  3000,
   "",
   2000,
 ];
@@ -31,8 +31,7 @@ const Header = (): JSX.Element => {
           <Typography variant="h6" className={styles.title}>
             <TypeAnimation
               sequence={APP_TITLE_ANIMATION}
-              //  Continuing previous Text
-              style={{ fontSize: "2em" }}
+              className={styles.title_text}
               wrapper="div"
               repeat={Infinity}
               speed={20}
