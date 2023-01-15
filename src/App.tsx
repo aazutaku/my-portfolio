@@ -1,8 +1,8 @@
 import React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
+import Routers from "./Routers";
 import styles from "./App.module.scss";
-import { Header } from "./components/modules";
 
 // デフォルトテーマ
 const defaultTheme = createTheme({
@@ -17,8 +17,7 @@ const App = (): JSX.Element => {
       {/* CssBaseline:normalize.cssのような動き */}
       <CssBaseline />
       <div className={styles.App}>
-        <Header />
-        <h1>COMMING SOON</h1>
+        <Routers />
       </div>
     </ThemeProvider>
   );
