@@ -3,7 +3,7 @@ import { PATH } from "../../Routers";
 import { LinkButton } from "../../components/parts";
 import { Products } from "../../components/modules";
 import styles from "./HomePage.module.scss";
-import { Button, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 
 const HomePage = (): JSX.Element => {
   return (

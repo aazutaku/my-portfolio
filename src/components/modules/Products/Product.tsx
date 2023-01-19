@@ -1,18 +1,6 @@
 import { FC } from "react";
 
-import {
-  Card,
-  CardHeader,
-  CardMedia,
-  CardActions,
-  IconButton,
-  Grid,
-  ButtonBase,
-} from "@mui/material";
-import {
-  Favorite as FavoriteIcon,
-  Share as ShareIcon,
-} from "@mui/icons-material";
+import { Card, CardHeader, CardMedia, Grid, ButtonBase } from "@mui/material";
 
 import styles from "./Product.module.scss";
 
