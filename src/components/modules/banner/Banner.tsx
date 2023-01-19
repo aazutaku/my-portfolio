@@ -4,7 +4,7 @@ import styles from "./Banner.module.scss";
 const Banner = (): JSX.Element => {
   return (
     <div className={styles.root}>
-      <img src="/images/hack-lab-256-log.png" className={styles.image} />
+      <img src="/images/hack-lab-256-logo.png" className={styles.image} />
       <div className={styles.content}>
         <Typography variant="h6" className={styles.title}>
           ここにプロフィールを記載
