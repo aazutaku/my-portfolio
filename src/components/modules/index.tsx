@@ -1,5 +1,5 @@
 import Header from "./header/Header";
 import Banner from "./banner/Banner";
-import Products from "./Products/Products";
+import Blogs from "./Blogs/Blogs";
 
-export { Header, Banner, Products };
+export { Header, Banner, Blogs };

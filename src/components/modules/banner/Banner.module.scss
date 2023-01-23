@@ -11,25 +11,22 @@
   .content {
     position: absolute;
     top: 0%;
-    right: 5%;
+    right: 0%;
     background: rgba(0, 0, 0, 0.7);
     height: 100%;
+    width: 100%;
     padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .title {
       line-height: 1.5;
-      font-size: large;
       margin-bottom: 20px;
     }
     .description {
       line-height: 1.25;
       letter-spacing: 1.25;
       margin-bottom: 3em;
-    }
-    .button {
-      padding: "20px 0px";
-      color: white;
-      font-weight: bold;
-      font-size: 16px;
     }
   }
 }

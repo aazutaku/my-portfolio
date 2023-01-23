@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import { Card, CardHeader, CardMedia, Grid, ButtonBase } from "@mui/material";
 
-import styles from "./Product.module.scss";
+import styles from "./Blog.module.scss";
 
 type ProductProps = {
   product: ProductDetailProps;
@@ -11,16 +11,18 @@ type ProductProps = {
 type ProductDetailProps = {
   name: string;
   description: string;
+  url: string;
   image: string;
 };
 
 const ProductCard: FC<ProductDetailProps> = ({
   name,
   description,
+  url,
   image,
 }): JSX.Element => {
   return (
-    <ButtonBase className={styles.croduct_card_button}>
+    <ButtonBase href={url} className={styles.croduct_card_button}>
       <Card className={styles.product_card}>
         <CardMedia
           component="img"
@@ -50,6 +52,7 @@ const Product: FC<ProductProps> = ({ product }): JSX.Element => {
       <ProductCard
         name={product.name}
         description={product.description}
+        url={product.url}
         image={product.image}
       />
     </Grid>
