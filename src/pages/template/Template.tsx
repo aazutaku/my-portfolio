@@ -11,12 +11,14 @@ const Template = (): JSX.Element => {
         <Header />
       </div>
       {/* Stack：垂直軸または水平軸に沿って直下の子のレイアウトを管理し、オプションで各子の間に間隔や仕切りを配置 */}
-      <Stack spacing={3}>
-        <div className={styles.banner}>
+      <Stack spacing={3} className={styles.stack}>
+        {/* <div className={styles.banner}>
           <Banner />
-        </div>
+        </div> */}
         {/* Outletの中身がRouterで変更される */}
-        <Outlet />
+        <div className={styles.content}>
+          <Outlet />
+        </div>
       </Stack>
     </div>
   );
