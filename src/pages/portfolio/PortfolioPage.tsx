@@ -1,13 +1,7 @@
 import { Link } from "react-router-dom";
 import { PageTransition } from "../../utils/motion";
-import styles from "./PortfolioPage.module.scss";
 
-interface Props {
-  title?: string;
-  titleWidth?: number;
-}
-
-const PortFolioPage = ({ title, titleWidth }: Props) => {
+const PortFolioPage = () => {
   return (
     <div>
       整備中...

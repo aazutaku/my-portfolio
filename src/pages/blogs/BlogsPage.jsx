@@ -1,21 +1,19 @@
 import * as THREE from "three";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
   Environment,
   Image,
-  Text,
   MeshReflectorMaterial,
   Scroll,
-  useScroll,
   ScrollControls,
   useCursor,
   Text3D,
 } from "@react-three/drei";
 import styles from "./BlogsPage.module.scss";
 import { easing } from "maath";
-import { Debug, Physics, RigidBody } from "@react-three/rapier";
-import { Button, IconButton } from "@mui/material";
+import { Physics, RigidBody } from "@react-three/rapier";
+import { IconButton } from "@mui/material";
 import { ArrowBackIos as ArrowBackIosIcon } from "@mui/icons-material";
 import { Link as RouterLink } from "react-router-dom";
 import { PATH } from "../../Routers";

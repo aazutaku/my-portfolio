@@ -16,10 +16,7 @@ const Routers = (): JSX.Element => {
       <Routes location={location} key={location.pathname}>
         <Route path={PATH.home} element={<Template />}>
           <Route index element={<HomePage />} />
-          <Route
-            path={PATH.portfolio}
-            element={<PortfolioPage title={"PortFolio"} titleWidth={8.2} />}
-          />
+          <Route path={PATH.portfolio} element={<PortfolioPage />} />
           <Route path={PATH.blogs} element={<Sample1Page />} />
         </Route>
       </Routes>
