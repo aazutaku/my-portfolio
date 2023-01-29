@@ -10,10 +10,17 @@ const LinkButton: FC<PropsTypes> = ({
   children,
   variant,
   color,
+  className,
   to,
 }): JSX.Element => {
   return (
-    <Button variant={variant} color={color} component={RouterLink} to={to}>
+    <Button
+      className={className}
+      variant={variant}
+      color={color}
+      component={RouterLink}
+      to={to}
+    >
       {children}
     </Button>
   );

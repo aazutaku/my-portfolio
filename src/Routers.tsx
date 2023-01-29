@@ -1,22 +1,26 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomePage, Sample1Page } from "./pages";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { HomePage, PortfolioPage, Sample1Page } from "./pages";
 import Template from "./pages/template/Template";
+import { AnimatePresence } from "framer-motion";
 
 export const PATH = {
   home: "/",
-  sample1: "/sample1",
+  portfolio: "/portfolio",
+  blogs: "/blogs",
 };
 
 const Routers = (): JSX.Element => {
+  const location = useLocation();
   return (
-    <BrowserRouter>
-      <Routes>
+    <AnimatePresence mode="wait" initial={false}>
+      <Routes location={location} key={location.pathname}>
         <Route path={PATH.home} element={<Template />}>
           <Route index element={<HomePage />} />
-          <Route path={PATH.sample1} element={<Sample1Page />} />
+          <Route path={PATH.portfolio} element={<PortfolioPage />} />
+          <Route path={PATH.blogs} element={<Sample1Page />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </AnimatePresence>
   );
 };
 
