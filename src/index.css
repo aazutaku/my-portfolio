@@ -21,3 +21,69 @@ body,
   margin: 0;
   padding: 0;
 }
+
+/* GENERAL SECTION STYLES */
+section {
+  padding: 10rem 0;
+  transition: var(--transition);
+}
+
+/* GENERAL IMAGES STYLES */
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* GENERAL BUTTON STYLES */
+.btn {
+  display: inline-block;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-sub);
+  color: var(--color-black);
+  padding: 0.6rem 2.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-2);
+  border-color: var(--color-main);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: var(--color-white);
+  transform: translateY(-0.5rem);
+}
+
+.btn.sm {
+  padding: 0.5rem 1.2rem;
+}
+
+:root {
+  --primary-hue: 270;
+  --black-lightness: 15%;
+  --dark-lightness: 44%;
+  --light-lightness: 94%;
+  /* --white-lightness: 100%;
+  --color-primary: hsl(var(--primary-hue), 89%, 41%);
+  --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
+  --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness)); */
+  --color-main: #121212;
+  --color-sub: darkslategray;
+  --color-white: hsl(0, 5%, var(--white-lightness));
+  --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
+
+  /* GENERAL CONTAINER VARIABLES */
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+
+  /* BORDER RADIUS VARIABLES */
+  --border-radius-1: 1.2rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 0.5rem;
+
+  /* GENERAL TRANSITION VARIABLE */
+  --transition: all 500ms ease;
+}

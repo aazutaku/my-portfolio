@@ -16,7 +16,7 @@ import { Physics, RigidBody } from "@react-three/rapier";
 import { IconButton } from "@mui/material";
 import { ArrowBackIos as ArrowBackIosIcon } from "@mui/icons-material";
 import { Link as RouterLink } from "react-router-dom";
-import { PATH } from "../../Routers";
+import { PATH } from "../../constants/path";
 import { PageTransition } from "../../utils/motion";
 
 const Blogs = () => {
