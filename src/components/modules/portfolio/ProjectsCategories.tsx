@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import CategoryButton from "./CategoryButton";
 import styles from "./Portfolio.module.scss";
 
@@ -11,10 +11,7 @@ const ProjectsCategories: React.FC<ProjectsCategoriesPropsType> = ({
   categories,
   onFilterProjects,
 }) => {
-  const [activeCategory, setActiveCategory] = useState("all");
-
   const changeCategoryHandler = (activeCat: string) => {
-    setActiveCategory(activeCat);
     onFilterProjects(activeCat);
   };
 
