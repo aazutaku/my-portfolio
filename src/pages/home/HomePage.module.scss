@@ -1,10 +1,15 @@
 .root {
   width: 100%;
   height: 100%;
-  .stack {
+  .stack__full {
     width: 100%;
     height: 100%;
   }
+
+  .stack__fitcontent {
+    width: 100%;
+  }
+
   .privacy_screen {
     position: fixed;
     top: 0;
