@@ -12,7 +12,7 @@ const Home = () => {
   });
 
   return (
-    <header className={styles.home__root}>
+    <header id="home" className={styles.home__root}>
       <Container maxWidth="xl">
         <div className={styles.header__container}>
           <div className={styles.header__profile} data-aos="fade-in">

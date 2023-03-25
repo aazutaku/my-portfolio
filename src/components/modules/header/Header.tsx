@@ -5,12 +5,14 @@ import { TypeAnimation } from "react-type-animation";
 import styles from "./Header.module.scss";
 
 const APP_TITLE_ANIMATION = [
-  "Azutaku's",
+  "azutaku",
   2000,
-  "Azutaku's Portfffff",
+  "azutaku.coooooom",
   2000,
-  "Azutaku's Portfolio",
-  3000,
+  "azutaku",
+  2000,
+  "azutaku.com",
+  2000,
   "",
   2000,
 ];

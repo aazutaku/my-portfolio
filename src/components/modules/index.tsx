@@ -3,5 +3,7 @@ import Blogs from "./Blogs/Blogs";
 import Home from "./home/Home";
 import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
+import Footer from "./footer/Footer";
+import FloatingNav from "./floating-nav/FloatingNav";
 
-export { Header, Home, About, Portfolio, Blogs };
+export { Header, Footer, Home, About, Portfolio, FloatingNav,Blogs };

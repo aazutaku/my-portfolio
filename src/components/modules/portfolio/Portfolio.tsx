@@ -24,12 +24,8 @@ const Portfolio = () => {
   };
 
   return (
-    <section className={styles.portfolio__root}>
-      <h2>Recent Projects</h2>
-      <p>
-        Check out some of the projects I recently worked on for my clients. Use
-        the buttons to toggle the different categories.
-      </p>
+    <section id="portfolio" className={styles.portfolio__root}>
+      <h2>My Portfolio</h2>
       <Container maxWidth="xl">
         <div className={styles.portfolio__container} data-aos="flip-right">
           <ProjectsCategories

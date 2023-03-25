@@ -13,7 +13,7 @@ const About = () => {
   };
 
   return (
-    <section className={styles.about__root}>
+    <section id="about" className={styles.about__root}>
       <Container maxWidth="xl">
         <div className={styles.about__container} data-aos="flip-left">
           <div className={styles.about__left}>
@@ -41,8 +41,11 @@ const About = () => {
                 </Card>
               ))}
             </div>
-            <p>About Me!!!</p>
-            <p>About Me!!!</p>
+            <p>Blogging is a hobby.</p>
+            <p>I am interested in learning both front-end and back-end.</p>
+            <p>
+              Recently, I am also interested in infrastructure and security.
+            </p>
           </div>
         </div>
       </Container>
