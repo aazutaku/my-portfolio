@@ -12,18 +12,20 @@ export interface ItemType {
 
 const FloatingNav = () => {
   return (
-    <ul id="floating__nav" className={styles.floating__nav}>
-      <Scrollspy
-        offset={-350}
-        className={styles.scrollspy}
-        items={["home", "about", "portfolio"]}
-        currentClassName={styles.active}
-      >
-        {data.map((item) => (
-          <Nav key={item.id} item={item} />
-        ))}
-      </Scrollspy>
-    </ul>
+    <div className={styles.floating__root}>
+      <ul id="floating__nav" className={styles.floating__nav}>
+        <Scrollspy
+          offset={-350}
+          className={styles.scrollspy}
+          items={["home", "about", "portfolio"]}
+          currentClassName={styles.active}
+        >
+          {data.map((item) => (
+            <Nav key={item.id} item={item} />
+          ))}
+        </Scrollspy>
+      </ul>
+    </div>
   );
 };
 

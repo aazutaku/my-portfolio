@@ -1,11 +1,17 @@
+.floating__root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .floating__nav {
   display: flex;
   align-items: center;
   position: fixed;
   bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
+  transform: translate3d(0, 0, 2500px);
+  z-index: 10;
+  padding: 0;
   animation: animateFloatingNav 300ms ease forwards;
 }
 
