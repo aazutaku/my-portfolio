@@ -1,5 +1,4 @@
 import CodeLabOtherImage from "../../../assets/category/CODE-LAB-OTHER.png";
-import Image2 from "../../../assets/hack-lab.png";
 import Image3 from "../../../assets/hack-lab.png";
 import Image4 from "../../../assets/hack-lab.png";
 import Image5 from "../../../assets/hack-lab.png";
