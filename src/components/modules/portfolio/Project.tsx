@@ -10,6 +10,7 @@ export interface DataPropsType {
   desc: string;
   demo: string;
   github: string;
+  blog: string;
 }
 
 export interface ProjectPropsType {
@@ -25,6 +26,14 @@ const Project: React.FC<ProjectPropsType> = ({ project }) => {
       <h4>{project.title}</h4>
       <p>{project.desc}</p>
       <div className={styles.portfolio__project_cta}>
+        <a
+          href={project.blog}
+          className="btn sm primary"
+          target="_blank"
+          rel="noopner noreferrer"
+        >
+          Blog
+        </a>
         <a
           href={project.demo}
           className="btn sm"
