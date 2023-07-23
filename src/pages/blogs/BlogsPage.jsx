@@ -106,8 +106,8 @@ const Frames = ({
   const groupRef = useRef();
 
   useFrame((state, dt) => {
-    easing.damp3(state.camera.position, p, 0.4, dt);
-    easing.dampQ(state.camera.quaternion, q, 0.4, dt);
+    easing.damp3(p, p, 0.4, dt);
+    easing.dampQ(q, q, 0.4, dt);
   });
 
   return (
@@ -189,7 +189,7 @@ const Title = () => {
     <Physics>
       <RigidBody restitution={1}>
         <Text3D
-          position={[-width / 2.2, 5, 0]}
+          position={[-width / 2.2, 5, -5]}
           scale={[1, 1, 2]}
           size={0.1 * width}
           font="/fonts/helvetiker_regular.typeface.json"
